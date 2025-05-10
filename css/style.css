@@ -1,0 +1,902 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+  }
+  
+  .header {
+    background-color: #0B9586;
+    padding: 10px 40px;
+    border-bottom: 1px solid #ccc;
+    
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.2s ease;
+    padding: 5px 15px;
+  }
+  
+  .nav a:hover {
+    background: rgba(0, 0, 0, 0.06);
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+  }
+  
+  .call-us span {
+    text-align: left;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: -1;
+    margin-left: 75px;
+  }
+  
+   strong {
+    font-size: 16px;
+    color: #fff;
+  }
+  
+/* ---------------------------------------------------------------------------------- */
+/* Hero Section */
+.hero {
+    background-image: url('../images/solar-panels-meadow\ 1.png');
+    background-size:cover;
+    background-position: center;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    padding: 0px 40px;
+  }
+  
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 140px;
+  }
+  
+  .hero p {
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: 140px;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-top:10px ;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: small;
+    text-align: justify;
+  }
+  
+  .btn-primary {
+    background-color: #0ba580;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #ffaf42;
+    color: #222;
+  }
+  
+  .btn:hover {
+    opacity: 0.9;
+  }
+  
+/* ----------------------------------------------------------------------------- */
+
+
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    .btn {
+        padding: 12px 25px;
+    }
+}
+
+/* --------------------------------------------------------------- */
+/* About Section */
+.about {
+    padding: 80px 0;
+    background-color: #fff;
+  }
+  
+  .about-container {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 180px;
+    margin-right: 150px;
+    position: relative;
+  }
+  
+  .about-text {
+    flex: 1 1 500px;
+  }
+  
+  .about-text h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .about-text p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  .features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+  
+  .features-list li {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #222;
+    font-weight: bold;
+    
+  }
+  
+  .features-list span {
+    color: #84BD3A;
+    margin-right: 8px;
+  }
+  
+  .about-image {
+    flex: 1 1 300px;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 420px;
+    height: 450px;
+  }
+  
+  .btn.yellow {
+    background-color: #ffd166;
+    color: #222;
+    padding: 12px 16px;
+    display: inline-block;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .addon {
+    position: absolute;
+    width: 236px;
+    height: 158px;
+    top: 210px;
+    left: 557px;
+    border-radius: 12px;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+    background-color: #FFBB1C;
+    padding: 24px 30px;;
+  }
+/* ----------------------------------------- */
+/* green Section */
+.green-section {
+    background-image: url('../images/8116\ 1.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    
+  }
+  
+  
+  .green-container {
+    position: relative;
+    z-index: 2;
+    width: 678px;
+    margin-left: 150px;
+  }
+  
+  .green-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .green-text p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    width: 500px;
+  }
+  
+/* ------------------------------------------- */
+.solar-kits-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .solar-kits-section h2 {
+    font-size: 2.5rem;
+    color: #111;
+    margin-bottom: 10px;
+  }
+  
+  .solar-kits-description {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    color: #555;
+    font-size: 1.1rem;
+  }
+  
+  .solar-kits-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .solar-card {
+    max-width: 350px;
+    box-shadow: .5px .5px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background: #fff;
+    text-align: left;
+  }
+  
+  .solar-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .solar-card-body {
+    padding: 20px;
+  }
+  
+  .solar-card-body h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .solar-card-body p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  .solar-card-body a {
+    color: #3CAB90;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .clamp{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;      /* عدد السطور المسموح بها */
+    /* line-clamp: 3;              Standard property for compatibility */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* ---------------------------------------------------------------------------- */
+.repairs-section {
+    position: relative;
+    background-image: url('../images/8116\ 1\ \(1\).png'); 
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  
+  .repairs-overlay {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    max-width: 770px;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .repairs-overlay h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+  
+  .repairs-overlay p {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+  
+  /* ------------------------------------------------------------------------ */
+  .energy-section {
+    background-color: #fdf8f3;
+    padding: 80px 40px;
+  }
+  
+  .energy-container {
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: 80px;
+    margin-right: 60px;
+  }
+  
+  .energy-info {
+    flex: 1 1 280px;
+  }
+  
+  .energy-icon {
+    background-color: #dbeee2;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .energy-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .energy-info h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+    line-height: 1.4;
+  }
+  
+  .energy-info p {
+    font-size: 15px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .energy-grid {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+  }
+  
+  .energy-card {
+    border: 1.5px solid #3CAB90;
+    border-radius: 12px;
+    background: #3CAB900D;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .energy-card img {
+    background-color: #3CAB90;
+    height: 90px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .energy-card h4 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #1e1e1e;
+  }
+  
+  .energy-card p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .card-link {
+    color: #3CAB90;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  /* ------------------------------------------------------------ */
+  .values-section {
+    background-color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .values-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+  }
+  
+  .values-subtitle {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 40px;
+  }
+  
+  .values-grid {
+    display: flex;
+    gap: 20px;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .value-card {
+    background-color: #f1fdf9;
+    border: 1px solid #c0e9d9;
+    border-radius: 12px;
+    padding: 25px 20px;
+    text-align: left;
+    max-width: 320px;
+    flex: 1 1 280px;
+  }
+  
+  .value-card img {
+    width: 40px;
+    margin-bottom: 15px;
+  }
+  
+  .value-card h3 {
+    font-size: 16px;
+    color: #1e1e1e;
+    margin-bottom: 10px;
+  }
+  
+  .value-card p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 50px;
+    height: inherit;
+  }
+  
+  /*-------------------------------------------------------------  */
+  .testimonials-section {
+    padding: 80px 20px;
+    background-color: #fff;
+  }
+  
+  .testimonials-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .testimonial-left {
+    flex: 1;
+  }
+  
+  .testimonial-left h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+    color: #1e1e1e;
+  }
+  
+  .testimonial-left .quote-mark {
+    color: #0ba580;
+    font-size: 36px;
+    vertical-align: middle;
+    margin-right: 8px;
+  }
+  
+  .testimonial-left p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+  }
+  
+  .testimonial-box {
+    flex: 1;
+    background-color: #f1fdf9;
+    padding: 30px;
+    border-radius: 12px;
+  }
+  
+  .section-tag {
+    color: #3CAB90;
+    font-weight: bold;
+    font-size: 14px;
+  }
+  
+  .testimonial-box .quote {
+    font-size: 16px;
+    color: #333;
+    margin: 25px 0 25px;
+
+  }
+  
+  .testimonial-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .user img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+  
+  .user strong {
+    display: block;
+    font-size: 15px;
+    color: #1e1e1e;
+  }
+  
+  .user small {
+    font-size: 13px;
+    color: #666;
+  }
+  
+  .nav button {
+    border: none;
+    background: #fff;
+    border-radius: 50%;
+    border: 1px solid #1C1C1C;
+    width: 32px;
+    height: 32px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  .dots-wrapper {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;   
+    height: 5px;             
+    padding: 10px;
+  }
+  
+  .dots {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: #ccc;
+    border-radius: 50%;
+  }
+  .dot.active {
+    background-color: gray;
+  }
+
+  /* ------------------------------------------------------- */
+  .footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 60px 20px 30px;
+    font-size: 14px;
+  }
+  
+  .footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;               /* Make horizontal */
+    gap: 20px;                   /* Space between items */
+    flex-wrap: wrap;             /* Allow wrap on small screens */
+    justify-content: center;     /* Optional: center links */
+  }
+  
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-col ul li a {
+    color: #ccc;
+    text-decoration: none;
+  }
+  
+  
+  .logo-placeholder {
+    width: 120px;
+    height: 40px;
+    background-color: #ccc;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+    gap: -20px;
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .subscribe-form input {
+    border: none;
+    flex: 1;
+    width: 100%;
+    padding: 12px 120px 12px 15px; /* padding right على قد الزر */
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    background-color: #FFFFFF17;
+    
+  }
+  .subscribe-form input::placeholder {
+    color: #aaa;
+  }
+  
+  .subscribe-form button {
+    padding: 10px 20px;
+    border-radius:  20px ;
+    background-color: #ffb703;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    padding: 10px 20px;
+    background-color: #ffb703;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    height: calc(100% - 8px);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #ccc;
+    margin-top: 30px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #ccc;
+  }
+  
+  .footer-bottom ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    
+  }
+  .footer-bottom ul li a {
+    color: #92989F;
+    text-decoration: none;
+  }
+  /* -------------------------------------------------------------- */
+  /* Responsive Layout - Mobile */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav ul {
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    /* Hero */
+    .hero h1 {
+      font-size: 24px;
+    }
+  
+    .hero-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* About Section */
+    .about-container,
+    .green-container,
+    .energy-container,
+    .testimonials-grid,
+    .footer-grid {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image img,
+    .green-image img {
+      max-width: 90%;
+    }
+  
+    /* Solar Kits */
+    .solar-kits-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Energy Cards Grid */
+    @media (max-width: 768px) {
+        .energy-container {
+          flex-direction: column;
+          text-align: center;
+        }
+      
+        .energy-info {
+          max-width: 100%;
+          margin-bottom: 30px;
+        }
+      
+        .energy-info h2 {
+          font-size: 20px;
+          line-height: 1.4;
+        }
+      
+        .energy-info p {
+          font-size: 14px;
+          padding: 0 10px;
+        }
+      
+        .energy-grid {
+          grid-template-columns: 1fr;
+          gap: 20px;
+        }
+      
+        .energy-card {
+          max-width: 100%;
+          margin: 0 auto;
+          text-align: left;
+        }
+      
+        .energy-card h4 {
+          font-size: 16px;
+        }
+      
+        .energy-card p {
+          font-size: 14px;
+        }
+      }
+      
+  
+    /* Values Cards */
+    .values-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Testimonials */
+    .testimonial-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+    }
+  
+    .testimonial-box {
+      text-align: left;
+    }
+  
+    /* Footer */
+    .footer-bottom {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  
+    .footer-bottom ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    .subscribe-form {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .subscribe-form input,
+    .subscribe-form button {
+      border-radius: 6px;
+      width: 100%;
+    }
+  }
+  
